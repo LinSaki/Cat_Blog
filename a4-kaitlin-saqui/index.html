@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page - Assignment 4</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <nav>
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="blog.html">Blog</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="logo">
+                <a href="index.html"><img style="width:80px; height:80px; display:block; margin:auto;" src="images/cat.gif"></a>
+            </div>
+            <div class="social">
+                <a href="https://www.instagram.com/" target="_blank"><img style="width:40px; height:40px; border-radius:30px;" src="images/instagram-edit.png"></a>
+                <a href="https://twitter.com/home" target="_blank"><img style="width:40px; height:40px; border-radius:30px" src="images/twitter-edit.png"></a>
+            </div>
+        </nav>
+
+        <header class="front-page">
+            <h1 style="font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;">Welcome to my Cat Blog</h1>
+            <a href="blog.html"><h1>Click to Enter</h1></a>
+        </header>
+
+        <footer>
+            <div class="quick">
+                <a href="index.html">Home</a>
+                <a href="blog.html">Blog</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="sign-up">
+                <p style="font-size: large; text-align:center;"><strong>Need more cats?</strong></p>
+                <p>Sign up and receive news and updates</p>
+                <form action="" method="get" onsubmit="return checkScript()">
+                    <input type="email" id="userEmail"  placeholder="Email Address">
+                    <span id="msg"></span><br>
+                    <input id="submit" type="submit" value="Sign Up">
+                </form>
+            </div>
+            <div class="follow">
+                <p style="font-size: larger;"><strong>Follow</strong></p>
+                <a href="https://www.instagram.com/" target="_blank"><img style="width:30px; height:30px; border-radius:30px;" src="images/instagram-edit.png"></a>
+                <a href="https://twitter.com/home" target="_blank"><img style="width:30px; height:30px; border-radius:30px" src="images/twitter-edit.png"></a>
+            </div>
+        </footer>
+        <audio controls loop muted autoplay>
+            <source src="audio/louiezong.mp3" type="audio/mp3">
+        </audio>
+        <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color:#968e85">Website made by Kaitlin Saqui | Music by Louie Zong</p>
+        <script>
+            function checkScript()
+            {
+                var name = document.getElementById("userEmail").value;
+                var msg = document.getElementById("msg");
+
+                if (name == "") {
+                    msg.innerHTML = "Please enter an email address";
+                    return false;
+                }
+                else {
+                    return true;
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Living with a Bengal</title>
+        <link rel="stylesheet" href="css/blogpost-style.css">
+    </head>
+    <body>
+        <nav>
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="blog.html">Blog</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="logo">
+                <a href="index.html"><img style="width:80px; height:80px; display:block; margin:auto;" src="images/cat.gif"></a>
+            </div>
+            <div class="social">
+                <a href="https://www.instagram.com/" target="_blank"><img style="width:40px; height:40px; border-radius:30px;" src="images/instagram-edit.png"></a>
+                <a href="https://twitter.com/home" target="_blank"><img style="width:40px; height:40px; border-radius:30px" src="images/twitter-edit.png"></a>
+            </div>
+        </nav>
+
+        <header>
+            <h1>Living with a Bengal</h1>
+        </header>
+
+        <section class="grid-container">
+            <div class="box chow1">
+                <a href="blog.html"><img src="images/cats/chai (7).jpg"></a>
+                <p>3/28/2021</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dicta illo voluptatem repudiandae earum vel illum nobis voluptatum tempora voluptas reprehenderit autem ipsa mollitia quis, praesentium error maiores vero nemo.</p>
+            </div>
+            <div class="directory">
+                <a href="blog-chai1.html" style="padding-right:80%;"><h3> < This is Chai </h3></a>
+                <a href="blog-chow2.html"><h3>The Elder ></h3></a>
+            </div>
+        </section>
+        <aside></aside>
+
+        <footer>
+            <div class="quick">
+                <a href="index.html">Home</a>
+                <a href="blog.html">Blog</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="sign-up">
+                <p style="font-size: large; text-align:center;"><strong>Need more cats?</strong></p>
+                <p>Sign up and receive news and updates</p>
+                <form action="" method="get" onsubmit="return checkScript()">
+                    <input type="email" id="userEmail"  placeholder="Email Address">
+                    <span id="msg"></span><br>
+                    <input id="submit" type="submit" value="Sign Up">
+                </form>
+            </div>
+            <div class="follow">
+                <p style="font-size: larger;"><strong>Follow</strong></p>
+                <a href="https://www.instagram.com/" target="_blank"><img style="width:30px; height:30px; border-radius:30px;" src="images/instagram-edit.png"></a>
+                <a href="https://twitter.com/home" target="_blank"><img style="width:30px; height:30px; border-radius:30px" src="images/twitter-edit.png"></a>
+            </div>
+        </footer>
+        <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color:#968e85">Made by Kaitlin Saqui</p>
+
+        <script>
+            function checkScript()
+            {
+                var email = document.getElementById("userEmail").value;
+                var msg = document.getElementById("msg");
+
+                if (email == "") {
+                    msg.innerHTML = "Please enter an email address";
+                    return false;
+                }
+                else {
+                    return true;
+                }
+            }
+        </script>
+    </body>
+</html>

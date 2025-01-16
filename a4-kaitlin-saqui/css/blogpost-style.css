@@ -1,0 +1,141 @@
+/*Each Blog Post
+Fixed Header*/
+nav {
+   display:grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   position: fixed;
+   top:0px;
+   z-index: 99;
+   width: 100%;
+}
+.social {
+   width:20%;
+   display:flex;
+   justify-content: space-between;
+   margin:auto;
+}
+
+.social img:hover {
+   box-shadow: 5px 5px 10px #c8a09c;
+}
+
+.links {
+   display:flex;
+   justify-content: space-evenly;
+   width:80%;
+   margin:auto;
+}
+
+a {
+   text-decoration:none;
+   color:#968E85;
+   font-family: 'Segoe UI', Verdana, sans-serif;
+}
+
+.links a:hover {
+   color:#FFCAB1;
+   text-decoration:underline;
+}
+
+/*Blog Page*/
+h1 {
+   text-align: center;
+   color:#8CC084;
+   text-shadow: 3px 3px 10px #c1e9bb;
+   margin-top:5rem;
+}
+
+.grid-container {
+   background-color:#ffe0d2;
+   margin:0 1rem 5rem 1rem;
+   padding:3rem 7rem;
+   border-radius: 20px;
+   font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.grid-container a:hover{
+   color:#7e7263;
+}
+
+.box {
+   height:fit-content;
+   width:35rem;
+   margin:auto;
+}
+
+.box img {
+   object-fit:cover;
+   width:35rem;
+}
+
+.directory h3 {
+    display:inline;
+}
+
+/*Footer*/
+footer {
+   display:grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   background-color: #C1D7AE;
+   height: 250px;
+   margin: 0 1rem;
+   font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+   color:#8e7f6e
+}
+
+.quick {
+   display: flex;
+   justify-content: space-around;
+   margin:auto;
+   width:50%;
+}
+
+.quick a{
+   color:#8e7f6e;
+   padding-right:8px;
+   font-size: larger;
+}
+
+.quick a:hover{
+   text-shadow:3px 3px 10px #c8a09c;
+}
+
+.sign-up {
+   margin:auto;
+   width:600px;
+   text-align:center;
+}
+
+.sign-up input {
+   font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+   height:40px;
+   margin-bottom:5px;
+}
+
+#userEmail {
+   width:98%;
+   text-align: center;
+}
+
+#submit {
+   background-color: #8e7f6e;
+   cursor:pointer;
+   color:rgb(219, 202, 202);
+   border-radius:10px;
+   width:100px;
+   height:50px;
+}
+
+#submit:hover {
+   background-color: #968E85;
+}
+
+.follow {
+   text-align:center;
+   margin:auto;
+   width:20%;
+}
+
+.follow img:hover {
+   box-shadow: 3px 3px 10px #c8a09c;
+}
