@@ -51,14 +51,7 @@ h1 {
    padding:3rem 4rem;
    height:60rem;
    border-radius: 20px;
-   grid-gap:10px;
-   display:grid;
-   grid-template-columns: repeat(4, 1fr);
-   grid-template-rows: repeat(2, 1fr);
    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-   grid-template-areas:
-   "grid1 grid2 grid3 grid4"
-   "grid5 grid6 grid7 grid8";
 }
 
 .image-wall img:hover{
@@ -77,6 +70,69 @@ h1 {
 .imgCommon img:hover {
    width:50vh;
    height:70vh;
+}
+
+.center{
+   text-align:center;
+}
+
+#centeredImg{
+   display:flex;
+   justify-content: space-around;
+}
+
+#displayedPhoto {
+   width:45vw;
+   height:30vw;
+   padding:20px;
+   object-fit:scale-down;
+}
+
+#leftArrow {
+   width:7vw;
+   margin-top:11rem;
+}
+
+#rightArrow {
+   width:7vw;
+   margin-top:11rem;
+}
+
+#rowImgs{
+   display:flex;
+   justify-content: center;
+}
+
+#rowImgs img{
+   height:14vh;
+   width:fit-content;
+   padding-left: 0.5vw;
+}
+
+#rowImgs img:hover {
+   position:relative;
+   height: 17vh;
+   width:fit-content;
+   cursor: pointer;
+}
+
+#exit{
+   margin:auto;
+   display:block;
+   color:wheat;
+   background-color: rgb(98, 98, 98);
+   padding:10px 20px;
+   border-radius:10px;
+   cursor:pointer
+}
+
+#exit:hover{
+   margin:auto;
+   display:block;
+   color:whitesmoke;
+   background-color: rgb(43, 43, 43);
+   padding:10px 20px;
+   border-radius:10px;
 }
 
 /*Footer*/

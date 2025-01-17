@@ -25,30 +25,26 @@
             <h1>Gallery</h1>
         </header>
         <section class="image-wall">
-            <div class="imgCommon">
-                <img src="images/cats/chai (1).jpg">
-            </div>
-            <div class="imgCommon">
-                <img src="images/cats/chow (3).jpg">
-            </div>
-            <div class="imgCommon">
-                <img src="images/cats/chai (12).jpg">
-            </div>
-            <div class="imgCommon">
-                <img src="images/cats/mimi.jpg">
-            </div>
-            <div class="imgCommon">
-                <img src="images/cats/chai (11).jpg">
-            </div>
-            <div class="imgCommon">
-                <img src="images/cats/chow (2).jpg">
-            </div>
-            <div class="imgCommon">
-                <img src="images/cats/chai (9).jpg">
-            </div>
-            <div class="imgCommon">
-                <img src="images/cats/chai (10).jpg">
-            </div>
+            <div id="centeredImg">
+                <div><img src="images/arrowFlip.png" alt="left arrow" id="leftArrow" onmouseover="nextImg(-1)"></div>
+                <div><img src="images/cats/chow (1).jpg" alt="Default img is of Chow" id="displayedPhoto"></div>
+                <div><img src="images/arrow.png" alt="right arrow" id="rightArrow" onmouseover="nextImg(1)"></div>
+            </div><br><br>
+            <div id="rowImgs">
+                <div><img src="images/cats/chow (1).jpg" alt="Himeji garden" onclick="displayMe(0);"></div>
+                <div><img src="images/cats/mimi.jpg" alt="cottage" onclick="displayMe(1);"></div>
+                <div><img src="images/cats/chai (6).JPG" alt="mt.fuji" onclick="displayMe(2);"></div>
+                <div><img src="images/cats/chow (2).jpg" alt="itsukushima shrine" onclick="displayMe(3);"></div>
+                <div><img src="images/cats/chai1.jpg" alt="izakaya" onclick="displayMe(4);"></div>
+                <div><img src="images/cats/chai (10).jpg" alt="Himeji garden" onclick="displayMe(5);"></div>
+                <div><img src="images/cats/chow (4).jpg" alt="Himeji castle" onclick="displayMe(6);"></div>
+                <div><img src="images/cats/chai (11).jpg" alt="Kobe city" onclick="displayMe(7);"></div>
+                <div><img src="images/cats/chai (9).jpg" alt="miyajima mountain" onclick="displayMe(8);"></div>
+                <div><img src="images/cats/chow (3).jpg" alt="itsukushima shrine at night" onclick="displayMe(9);"></div>
+            </div><br><br>
+            <div>
+            <p>&#128247;: Kaitlin Saqui</p>
+            <input type="button" value="Exit" id="exit" onclick="exitPage();"></div>
         </section>
         <aside></aside>
 
@@ -75,21 +71,6 @@
             </div>
         </footer>
         <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color:#968e85">Made by Kaitlin Saqui</p>
-
-        <script>
-            function checkScript()
-            {
-                var email = document.getElementById("userEmail").value;
-                var msg = document.getElementById("msg");
-
-                if (email == "") {
-                    msg.innerHTML = "Please enter an email address";
-                    return false;
-                }
-                else {
-                    return true;
-                }
-            }
-        </script>
+        <script src="scripts/script.js"></script>
     </body>
 </html>
